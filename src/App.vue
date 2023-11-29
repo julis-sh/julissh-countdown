@@ -27,7 +27,6 @@ export default {
 .flex-container {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 .center {
   display: flex;
@@ -41,10 +40,5 @@ img {
 }
 body {
   background: linear-gradient(to bottom right, #ffffff, #fff7b2);
-  background-size: contain, cover;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  min-height: 100%;
 }
 </style>

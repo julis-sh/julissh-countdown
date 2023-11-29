@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <div class="flex-container">
+      <img alt="logo" src="./assets/logo.png" width="1912" height="1464"/>
+    </div>
+    <div class="center">
+      <Countdown />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Countdown from "./components/Countdown.vue";
 
 export default {
-  name: 'App',
+  name: "CountdownTimer",
   components: {
-    HelloWorld
-  }
-}
+    Countdown,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+img {
+  max-width: 33%;
+  height: auto;
+}
+body {
+  background: linear-gradient(to bottom right, #ffffff, #fff7b2);
+  background-size: contain, cover;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
 }
 </style>

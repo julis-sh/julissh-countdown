@@ -3,6 +3,9 @@
     <div class="flex-container">
       <img alt="logo" src="./assets/logo.png" width="1912" height="1464"/>
     </div>
+    <font>
+      Es passiert was...<br>
+    </font>
     <div class="center">
       <Countdown />
     </div>
@@ -21,6 +24,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+    font-family: Anybody;
+    src: url(assets/Anybody-ExtraBold.ttf);
+    font-weight:400;
+}
 .app {
   text-align: center;
 }
@@ -40,5 +48,10 @@ img {
 }
 body {
   background: linear-gradient(to bottom right, #ffffff, #fff7b2);
+}
+font {
+  font-family: Anybody;
+  color: #E6007E;
+  font-size: 40px;
 }
 </style>

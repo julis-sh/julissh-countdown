@@ -5,17 +5,17 @@ import DatenschutzView from '../views/DatenschutzView.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/countdown/',
     name: 'home',
     component: HomeView
   },
   {
-    path: '/impressum',
+    path: '/countdown/impressum',
     name: 'impressum',
     component: ImpressumView
   },
   {
-    path: '/datenschutz',
+    path: '/countdown/datenschutz',
     name: 'datenschutz',
     component: DatenschutzView
   }

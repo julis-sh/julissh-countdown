@@ -1,10 +1,5 @@
 <template>
   <div class="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/impressum">Impressum</router-link> |
-      <router-link to="/datenschutz">Datenschutz</router-link>
-    </div> -->
     <div class="navbar">
       <div class="navbar-logo">
         <router-link to="/">
@@ -12,9 +7,9 @@
         </router-link>
       </div>
       <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/impressum">Impressum</router-link></li>
-          <li><router-link to="/datenschutz">Datenschutz</router-link></li>
+          <li><router-link to="/countdown/">Home</router-link></li>
+          <li><router-link to="/countdown/impressum">Impressum</router-link></li>
+          <li><router-link to="/countdown/datenschutz">Datenschutz</router-link></li>
       </ul>
       <a href="mailto:info@julis-sh.de">
         <button class="hire-btn">Kontakt aufnehmen</button>
@@ -58,16 +53,6 @@ font {
   color: #E6007E;
   font-size: 40px;
 }
-/* nav {
-  padding: 30px;
-}
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-nav a.router-link-exact-active {
-  color: #42b983;
-} */
 *{
     margin: 0;
     padding: 0;
@@ -89,16 +74,10 @@ nav a.router-link-exact-active {
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
-    /* font-family: 'Anybody'; */
     color: #E6007E;
     transition: 0.6s ease-out;
     overflow-y: scroll;
 }
-
-
-/*
-test
-*/
 .navbar{
     display: flex;
     align-items: center;
@@ -176,5 +155,4 @@ test
       font-size: 14px;
   }
 }
-
 </style>

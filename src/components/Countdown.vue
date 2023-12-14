@@ -6,7 +6,7 @@
           <radial-progress-bar
             :diameter="diameter"
             :completed-steps="days"
-            :total-steps="60"
+            :total-steps="61"
             :animateSpeed="1000"
             :strokeWidth="strokeWidth"
             :innerStrokeWidth="innerStrokeWidth"
@@ -23,7 +23,7 @@
           <radial-progress-bar
             :diameter="diameter"
             :completed-steps="hours"
-            :total-steps="60"
+            :total-steps="24"
             :animateSpeed="1000"
             :strokeWidth="strokeWidth"
             :innerStrokeWidth="innerStrokeWidth"
@@ -82,7 +82,7 @@ export default {
   name: "CountdownTimerComponent",
   data() {
     const now = new Date();
-    const deadline = new Date("December 10 2023 00:00:00");
+    const deadline = new Date("February 01 2024 18:00:00");
     return {
       diameter: 145,
       strokeWidth: 8,
